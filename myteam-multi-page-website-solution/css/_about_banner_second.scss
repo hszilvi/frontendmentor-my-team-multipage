@@ -1,0 +1,150 @@
+.about__second-banner {
+    background-color: $deep-jungle-green;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    .about__second-banner-img-top {
+        position: absolute;
+        left: -6rem;
+        top: -6.3rem;
+        @include breakpoint-up('large') {
+            top: 0;
+        }
+
+    }
+    .about__second-banner-img-bottom {
+        position: absolute;
+        right: 0;
+        bottom: -.3rem;
+    }
+    .about-second-banner-content-wrapper {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        @include breakpoint-up('large') {
+            margin-bottom: 7rem;
+            margin-top: 9rem;
+        }
+        h2 {
+            font-size: 2rem;
+            line-height: 2rem;
+            font-weight: 700;
+            @include breakpoint-up('xlarge') {
+                font-size: 3rem;
+                margin-bottom: 1.5rem;
+            }
+
+        }
+        .second-banner-cards-wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            @include breakpoint-up('large') {
+                max-width: 69.4rem;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: .7rem;
+            }
+            .second-banner-card {
+                background-color: $sacramento-state-green;
+                    width: 20.4375rem;
+                    height: 15.8125rem;
+                    padding-top: 2rem;
+                    position: relative;
+                    margin-bottom: 1rem;
+                    margin-top: 2rem;
+                    @include breakpoint-up('large') {
+                        width: 17.5625rem;
+                    }
+                    @include breakpoint-up('xlarge') {
+                        width: 21.875rem;
+                    }
+
+
+                .card-open-button {
+                    border-radius: 50%;
+                    border: none;
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    background-image: url(/images/icon-cross.svg);
+                    background-color: $light-coral;
+                    background-repeat: no-repeat;
+                    margin: auto;
+                    background-position: 50%;
+                    cursor: pointer;
+                    position: absolute;
+                    bottom: -1.6rem;
+                    left: 0;
+                    right: 0;
+                    &:hover {
+                        background-color: $rapture-blue;
+                    }
+                }                
+                .second-banner-card-main {
+                    display: block;                   
+                    .card-img {
+                        width: 6rem;
+                        height: 6rem;
+                        border-radius: 50%;
+                        border: 2px solid $rapture-blue;
+                    }
+                    .card-text-content {
+                        text-align: center;
+                        .name {
+                            color: $rapture-blue;
+                            font-size: 1.125rem;
+                            font-weight: 700;
+                            line-height: 1.75rem;
+                            padding-top: 1rem;
+                        }
+                        .title {
+                            font-style: italic;
+                            font-size: 0.9375rem;
+                            font-weight: 500;
+                            line-height: 1.5625rem;
+                        }
+                    }   
+                }                  
+                .quote {
+                    display: none;
+                    width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    .quote-name {
+                        color: $rapture-blue;
+                        font-size: 1.125rem;
+                        margin-bottom: 1rem;
+                    }
+                    .quote-person {
+                        font-style: italic;
+                        font-size: .9375rem;
+                        line-height: 1.5625rem;
+                        margin-bottom: 1.5rem;
+                        font-weight: 600;
+                    }
+                    .quote-socials {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 1rem;
+                        justify-content: center;
+                        margin-top: 1.5rem;
+                        cursor: pointer;
+                        .socials-icon > path:hover {
+                            fill: $light-coral;
+                        }
+                    }                    
+                }
+            }
+        }
+    }
+    .active {
+        transform: rotate(45deg);
+    }
+}

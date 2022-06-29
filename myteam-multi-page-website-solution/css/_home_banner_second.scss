@@ -1,0 +1,108 @@
+.home__banner-second {
+    background-color: $dark-green;
+    overflow: hidden;
+    position: relative;
+    .banner-second-img {
+        position: absolute;
+        right: -6.3rem;
+        @include breakpoint-down('large') {
+            top: 0;
+        }
+        @include breakpoint-up('xlarge') {
+            bottom: 0;
+        }
+    }   
+    .banner-second-maincontainer {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 6rem;
+        text-align: center;
+        @include breakpoint-up('xlarge') {
+            width: 80%;
+            display: flex;
+            margin-left: 10%;
+            flex-direction: row;
+            align-content: stretch;
+            padding-top: 8rem;
+        }
+        .h2-element {
+            width: 445px;
+            @include breakpoint-up('xlarge') {
+                margin-top: -4.5rem;
+            }
+            hr {
+                width: 50px;
+                border-top: 4px solid $light-coral;
+                position: absolute;
+                top: 4rem;
+                left: 2rem;
+                @include breakpoint-up('large') {
+                    margin-left: 4rem;
+                }
+                @include breakpoint-up('xlarge') {
+                    position: relative;
+                    margin-left: 0;
+                    margin-bottom: 4rem;
+                }
+            }
+            h2 {
+                text-align: left;
+                width: 240px;
+                position: absolute;
+                left: 2rem;
+                top: 6rem;
+                font-size: 2rem;
+                line-height: 2rem;
+                margin-bottom: 2.5rem;
+                @include breakpoint-up('large') {
+                    width: 60%;
+                    margin-left: 4rem;
+                }
+                @include breakpoint-up('xlarge') {
+                    width: 445px;
+                    font-size: 3rem;
+                    line-height: 3rem;
+                    position: relative;
+                    margin-left: 0;
+                    margin-top: -3rem;
+                }
+            }           
+        }
+        .card-wrapper {
+            // margin-left: 4rem;
+            // margin-right: auto;
+            margin-bottom: 5rem;
+            margin-top: 13rem;
+            @include breakpoint-up('large') {
+                margin-top: 8rem;
+                margin-left: 4rem;
+                width: 60%;
+                // margin-left: -2rem;
+            }
+            @include breakpoint-up('xlarge') {
+                margin-top: 2rem;
+                margin-left: 8rem;
+            }
+            .cards {
+                @include breakpoint-up('large') {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    text-align: left;
+                    margin-bottom: 2rem;
+                    .card-textbox {
+                        padding-left: 2rem;
+                    }
+                }
+                h3 {
+                color: $light-coral;
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                }
+            }       
+        }
+    }
+}

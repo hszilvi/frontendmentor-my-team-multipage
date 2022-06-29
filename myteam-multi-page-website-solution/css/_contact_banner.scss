@@ -1,0 +1,157 @@
+.contact__banner {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6rem;
+
+    // width: 90%;
+    position: relative;
+    overflow: hidden;
+    .contact-img-top {
+        display: none;
+        position: absolute;
+        left: -6.3rem;
+        @include breakpoint-up('large') {
+            display: block;
+        }
+        @include breakpoint-up('xlarge') {
+            left: -7rem;
+        }
+    
+    }
+    .contact-img-bottom {
+        position: absolute;
+        bottom: -7rem;
+        right: -7rem;
+        @include breakpoint-up('large') {
+            bottom: 0;
+        }
+    }
+    .contact-wrapper {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 6rem;
+        
+        @include breakpoint-up('large') {
+            width: 80%;
+            margin-top: .5rem;
+        }
+        @include breakpoint-up('xlarge') {
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+        }
+        .contact-content {
+            display: flex;
+            flex-direction: column;
+            .content-title {
+                text-align: center;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+                @include breakpoint-up('xlarge') {
+                    text-align: left;
+                }
+                h1 {
+                    font-size: 2.5rem;
+                    line-height: 2.5rem;
+                    margin-bottom: 1.5rem;
+                    @include breakpoint-up('large') {
+                        font-size: 4rem;
+                        line-height: 3.5rem;
+                    }
+                }
+                h2 {
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    color: $light-coral;
+                }
+            }
+            .content-cta {
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+                margin-bottom: 2rem;
+                @include breakpoint-up('large') {
+                    width: 80%;
+                }
+                @include breakpoint-up('xlarge') {
+                    margin-left: 0;
+                    width: 100%;
+                }
+                .content-cta-element {
+                    display: flex;
+                    flex-direction: row;
+                    .content-cta-element-text {
+                        padding-left: 1rem;
+                        padding-top: .8rem;
+                        p {
+                            font-size: 1.125rem;
+                            line-height: 1.75rem;
+                        }
+                    }
+                }
+            }
+        }
+        .contact-form {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            @include breakpoint-up('xlarge') {
+                width: 50%;
+                // margin-left: 1rem;
+                // padding-left: 1rem;
+            }
+            
+            input {
+                width: 100%;
+                background: transparent;
+                color: $white;
+                opacity: 60%;
+                border: none;
+                border-bottom: 2px solid;
+                padding-bottom: 1rem;
+                padding-top: 1.3rem;
+                padding-left: .5rem; 
+                outline: none;
+                cursor: pointer;
+                &:hover {
+                    color: $light-coral;
+                    border-bottom: 2px solid $light-coral;
+                }
+            }
+            #message {
+                padding-bottom: 3rem;
+            }
+            #submit-button {
+                width: 7.69rem;
+                height: 3rem;
+                border-radius: 25px;
+                opacity: 100;
+                border: none;
+                background-color: $white;
+                color: $deep-jungle-green;
+                padding: 0;
+                font-weight: 600;
+                margin-top: 1.5rem;
+                cursor: pointer;
+                &:hover {
+                    background-color: $deep-jungle-green;
+                    color: $white;
+                }
+            }
+            .error {
+                // display: none;
+                font-size: .8125rem;
+                font-weight: 700;
+                font-style: italic;
+                line-height: .78rem;
+                color: $light-coral;
+                padding-top: .5rem;
+                padding-left: .7rem;
+                visibility: hidden;
+
+            }
+        }
+    }
+    
+}

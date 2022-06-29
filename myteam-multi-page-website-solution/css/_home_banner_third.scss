@@ -1,0 +1,91 @@
+.home__banner-third {
+    position: relative;
+    background-color: $deep-jungle-green;
+    .banner-third-topimg {
+        margin-bottom: 2rem;
+        @include breakpoint-up('large') {
+            margin-bottom: 0;
+        }
+        @include breakpoint-up('xlarge') {
+            margin-bottom: 1rem;
+        }
+    }
+    .banner-third-wrapper {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 4rem;
+        @include breakpoint-up('large') {
+            width: 75%;
+        }
+        @include breakpoint-up('xlarge') {
+            width: 75%;
+        }
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            @include breakpoint-up('large') {
+                padding-left: 3rem;
+                padding-right: 3rem;
+            }
+            @include breakpoint-up('xlarge') {
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+        }
+        .bold-lightblue {
+            color: $rapture-blue;
+        }
+        .banner-third-card-container {
+            text-align: center;
+            margin-bottom: 6rem;
+            @include breakpoint-up('xlarge') {
+                display: flex;
+                flex-direction: row;
+            }
+            .cards {
+                margin-bottom: 2rem;
+                @include breakpoint-up('xlarge') {
+                    padding-left: 2rem;
+                }
+                .card-textcontainer {
+                    font-size: .9375rem;
+                    line-height: 1.5625rem;
+                    p {
+                        margin-bottom: 1rem;
+                        font-weight: 600;
+                    }
+                    .name-lightblue {
+                        color: $rapture-blue;
+                        font-weight: 700;
+                        font-size: 1.125rem;
+                    }
+                    .title {
+                        font-style: italic;
+                        font-size: 0.8125rem;
+                        font-weight: 500;
+                    }                    
+                }
+                .quotationmark{
+                    margin-bottom: -1.6rem;
+                }
+                .avatars {
+                    img {
+                        width: 3.875rem;
+                        height: 3.875rem;
+                        border: 2px solid $rapture-blue;
+                        border-radius: 50%;
+                    }
+                  
+                }
+            }
+        }
+    }
+    .banner-third-bottomimg {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}

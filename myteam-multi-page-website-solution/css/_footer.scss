@@ -1,0 +1,177 @@
+.footer {
+    background-color: $dark-green;
+    @include breakpoint-up('large') {
+        position: relative;
+        height: 17rem;
+    }
+    @include breakpoint-up('xlarge') {
+        height: 12.25rem;
+    }
+    .footer-menubox {
+        width: 15.94rem;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        @include breakpoint-up('large') {
+            text-align: left;
+            position: absolute;
+            top: -1rem;
+            left: 2rem;
+        }
+        @include breakpoint-up('xlarge') {
+            left: 10rem;
+        }
+        .footer-active-logo {
+            margin-left: auto;
+            margin-right: auto;
+            // transform: scale(.9);
+        }
+        .footer-navigation {            
+            .footer-navigation-links {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                justify-content: space-between;
+                margin-left: auto;
+                margin-right: auto;
+                width: 6.5rem;
+                margin-top: 2rem;
+                @include breakpoint-up('large') {
+                    margin-left: 0;
+                    margin-top: 3rem;
+                }
+                @include breakpoint-up('xlarge') {
+                    margin-top: 2rem;
+                }
+
+                li {
+                    text-decoration: none;
+                    a {
+                        text-decoration: none;
+                        color: $white;
+                        font-size: .9375rem;
+                        font-weight: 600;
+                        cursor: pointer;
+                        &:hover {
+                            color: $light-coral;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-contact-details {
+        color: $white;
+        opacity: 60%;
+        text-align: center;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;  
+        @include breakpoint-up('large') {
+            position: absolute;
+            right: 2rem;
+            top: 3rem;
+            text-align: right;
+        }    
+        @include breakpoint-up('xlarge') {
+            position: absolute;
+            top: 3rem;
+            left: 12rem;
+            text-align: left;
+        } 
+    }
+    .footer-social-copy-wrapper {
+        // width: 20.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        @include breakpoint-up('large') {
+            position: relative;
+            top: 12rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            
+
+        }
+        @include breakpoint-up('xlarge') {
+            flex-direction: column;
+            // justify-content: flex-end;
+            align-items: flex-end;
+            position: absolute;
+            top: 3rem;
+            right: 0;   
+            margin-right: 10rem; 
+
+        }
+        .footer-socials {
+            width: 6.5rem;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            justify-content: space-around;
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: row;   
+                .social-icons {
+                    cursor: pointer;
+                    .icon > path:hover  {   
+                        fill: $light-coral;               
+                }
+            }
+            @include breakpoint-up('large') {
+               
+                margin: 0 0 0 0;
+            }
+            @include breakpoint-up('xlarge') {
+                margin-bottom: 3rem;
+            }
+            // @include breakpoint-up('xlarge') {
+            //     // position: relative;
+            //     top: 3rem;
+            //     // right: 10rem;
+            //     // bottom: 0;
+            //     left: 73rem;
+            //     // inset: 3rem 10rem 0 20rem;
+            //     // margin: 0 10rem 0 85%;
+            // }     
+        }
+        .footer-copyright {
+            color: $white;
+            opacity: 60%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 3rem;
+            @include breakpoint-up('large') {
+               margin: 0;
+            }
+            // @include breakpoint-up('xlarge') {
+            //     position: absolute;
+            //     // inset: 8rem 10rem 0 0;
+            //     top: 8rem;
+            //     right: 10rem;
+            // }
+            
+            
+        }
+
+    }
+    
+}
+.personal {
+    background-color: $dark-green;
+    color: $white;
+    margin-left: auto;
+    margin-right: auto;
+    .attribution {
+        text-align: center;
+        a {
+            color: $light-coral;
+        }
+    }
+}

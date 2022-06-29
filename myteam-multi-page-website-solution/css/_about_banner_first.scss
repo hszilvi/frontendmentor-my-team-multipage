@@ -1,0 +1,71 @@
+.about__first-banner {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    .about__first-banner-wrapper {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        @include breakpoint-up('large') {
+            max-width: 70%;
+        }
+        @include breakpoint-up('xlarge') {
+            max-width: 80%;
+            height: 100%;
+        }
+        .about__first-banner-text {
+            text-align: center;
+            margin-bottom: 6rem;
+            @include breakpoint-up('xlarge') {
+                display: flex;
+                flex-direction: row;
+            }
+            h1 {
+                font-size: 2.5rem;
+                font-weight: 700;
+                line-height: 2.5rem;
+                margin-bottom: 1.2rem;
+                @include breakpoint-up('large') {
+                    font-size: 4rem;
+                    line-height: 3.5rem;
+                }
+                @include breakpoint-up('xlarge') {
+                    padding-left: 2rem;
+                }
+            }
+            .about__first-banner-pbox {
+                @include breakpoint-up('xlarge') {
+                    margin-left: 12rem;
+                }
+                hr {
+                    display: none;
+                    width: 3.125rem;
+                    border-top: 4px solid $light-coral;
+                    @include breakpoint-up('xlarge') {
+                        display: block;
+                    }
+                }              
+                p {
+                    font-size: .9375rem;
+                    font-weight: 600;
+                    line-height: 1.75rem;   
+                    @include breakpoint-up('xlarge') {
+                        text-align: left;
+                        padding-right: 4rem;
+                        padding-top: 2rem;                        
+                    }      
+                }
+            }
+        }
+        .about__first-banner-img {
+            position: absolute;
+            bottom: -6.5rem;
+            right: -6.5rem;
+            @include breakpoint-up('large') {
+                bottom: 0;
+                right: -6.5rem;
+            }
+        }
+    }
+}
